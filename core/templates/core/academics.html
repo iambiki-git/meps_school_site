@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+
+
+<!-- About Section -->
+<section class="py-12">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">About Our School</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+                <img src="{% static 'images/school.jpg' %}" alt="School Image" class="rounded-lg shadow-lg">
+            </div>
+            <div class="flex items-center">
+                <p class="text-gray-700 text-lg">
+                    Our school is dedicated to providing a high-quality education that prepares students for success in college and beyond. We offer a wide range of academic programs, extracurricular activities, and support services to help every student achieve their full potential.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Courses Section -->
+<section class="bg-gray-100 py-12">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Our Courses</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Course Card 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-2">Mathematics</h3>
+                <p class="text-gray-700">Explore the world of numbers, equations, and problem-solving with our comprehensive math courses.</p>
+            </div>
+            <!-- Course Card 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-2">Science</h3>
+                <p class="text-gray-700">Dive into the wonders of the natural world through our hands-on science programs.</p>
+            </div>
+            <!-- Course Card 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-2">Literature</h3>
+                <p class="text-gray-700">Discover the power of language and storytelling with our engaging literature courses.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Faculty Section -->
+<section class="py-12">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Our Faculty</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Faculty Card 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="{% static 'images/teacher1.jpg' %}" alt="Teacher 1" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-bold mb-2">John Doe</h3>
+                <p class="text-gray-700">Mathematics Teacher</p>
+            </div>
+            <!-- Faculty Card 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="{% static 'images/teacher2.jpg' %}" alt="Teacher 2" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-bold mb-2">Jane Smith</h3>
+                <p class="text-gray-700">Science Teacher</p>
+            </div>
+            <!-- Faculty Card 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="{% static 'images/teacher3.jpg' %}" alt="Teacher 3" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-bold mb-2">Emily Johnson</h3>
+                <p class="text-gray-700">Literature Teacher</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% endblock %}
